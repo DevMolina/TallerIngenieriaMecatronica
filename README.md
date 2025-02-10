@@ -12,9 +12,9 @@ $$
 
 ```mermaid
 graph TD;
-    V -- R --> Node1;
-    Node1 -- L --> Node2;
-    Node2 --|retorno| V;
+    V -->|R| Node1;
+    Node1 -->|L| Node2;
+    Node2 -->|retorno| V;
 ```
 
 ## Resolviendo la Ecuación
