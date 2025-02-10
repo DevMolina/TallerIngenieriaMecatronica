@@ -10,12 +10,12 @@ $$
 
 ## Diagrama del Circuito
 
-```mermaid
-graph TD;
-    V -->|R| Node1;
-    Node1 -->|L| Node2;
-    Node2 -->|retorno| V;
-```
+     +----R----L----+
+     |             |
+     V             |
+     |             |
+     +-------------+
+
 
 ## Resolviendo la Ecuación
 
