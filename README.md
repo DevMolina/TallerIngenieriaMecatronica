@@ -28,7 +28,7 @@ $$
 ## Interpretación
 
 - Cuando \( t = 0 \), la corriente es cero.
-- A medida que el tiempo avanza, la corriente tiende a \( \frac{V}{R} \).
+- A medida que el tiempo avanza, la corriente tiende a \( $$\frac{V}{R}$$ \).
 - La constante de tiempo del circuito está dada por \( \tau = \frac{L}{R} \), indicando la rapidez con la que el circuito alcanza su estado estable.
 
 Este circuito representa un sistema RL típico y su análisis es útil en aplicaciones de electrónica y control de sistemas eléctricos.
