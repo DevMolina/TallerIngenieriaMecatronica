@@ -43,7 +43,7 @@
 - **Ley de Voltajes de Kirchhoff (LVK)**: La suma algebraica de las diferencias de potencial en un lazo cerrado es igual a cero.
 
   $$
-  \sum V_{\text{fuentes}} = \sum V_{\text{caídas}}
+  \sum I_{\text{fuentes}} = \sum I_{\text{caidas}}
   $$
 
 ### Potencia en Circuitos Eléctricos
@@ -99,10 +99,12 @@ $$
 
 ## Procedimiento
 
+![Diagrama de circuito en Tinkercad](Cto1Lab2.png)
+
 1. **Montaje del Circuito Serie**:
    - Conecta los dos bombillos en serie.
    - Mide el voltaje total aplicado y la corriente utilizando el multímetro.
-   - Calcula la potencia de cada bombillo utilizando \(P = V \times I\).
+   - Calcula la potencia de cada bombillo utilizando.
 
 2. **Montaje del Circuito Paralelo**:
    - Conecta los dos bombillos en paralelo con la misma fuente de alimentación.
