@@ -40,6 +40,9 @@ Un motor eléctrico de $50W$ funciona con una batería de $24V$. ¿Cuál es la c
 
 Se tiene un resistor desconocido conectado a una fuente de $15V$. Se mide una corriente de $2mA$. ¿Cuál es el valor de la resistencia? ¿Cuánta potencia disipa el resistor? Expresa los resultados en kiloohmios ($k\Omega$) y microwatts ($\mu W$).
 
+### Entrega
+Cada respuesta debe incluir el análisis del problema, las ecuaciones utilizadas y los cálculos detallados con unidades en notación de ingeniería.
+
 ## 3. Lista de Materiales
 
 | Cantidad | Material |
@@ -93,6 +96,12 @@ $$\text{Tolerancia} = \left( \frac{|R_{medido} - R_{nominal}|}{R_{nominal}} \rig
 - Compara el comportamiento del hilo de nicrom con una resistencia convencional.
 - Investiga el uso del multímetro en la medición de resistencia, voltaje y corriente.
 - Explica el funcionamiento del protoboard y cómo facilita el montaje de circuitos.
+
+graph TD;
+    A[Fuente de alimentación] -->|5V| B[Resistencia 1kΩ];
+    B --> C[LED];
+    C --> D[Tierra];
+
 
 ## Tablas de Referencia
 
