@@ -97,7 +97,7 @@ $$\text{Tolerancia} = \left( \frac{|R_{medido} - R_{nominal}|}{R_{nominal}} \rig
 - Investiga el uso del multímetro en la medición de resistencia, voltaje y corriente.
 - Explica el funcionamiento del protoboard y cómo facilita el montaje de circuitos.
 
-![Diagrama de circuito en Tinkercad](Lab1Taller.png)
+![Diagrama de circuito en Tinkercad](Lab1 Taller.png)
 
 ## Tablas de Referencia
 
