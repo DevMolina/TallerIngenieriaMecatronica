@@ -36,66 +36,66 @@
 ### Leyes de Kirchhoff
 - **Ley de Corrientes de Kirchhoff (LCK)**: La suma algebraica de todas las corrientes que entran y salen de un nodo es igual a cero.
   
-  \[
+  $$
   \sum I_{\text{entrantes}} = \sum I_{\text{salientes}}
-  \]
+  $$
 
 - **Ley de Voltajes de Kirchhoff (LVK)**: La suma algebraica de las diferencias de potencial en un lazo cerrado es igual a cero.
 
-  \[
+  $$
   \sum V_{\text{fuentes}} = \sum V_{\text{caídas}}
-  \]
+  $$
 
 ### Potencia en Circuitos Eléctricos
 La potencia se calcula con la fórmula:
 
-\[
+$$
 P = V \times I
-\]
+$$
 
 donde \(V\) es el voltaje y \(I\) la corriente. La potencia también puede calcularse con:
 
-\[
+$$
 P = I^2 R = \frac{V^2}{R}
-\]
+$$
 
 ### Resistencia Equivalente
 - En **circuitos en serie**, la resistencia equivalente es la suma de las resistencias:
 
-\[
+$$
 R_{\text{eq}} = R_1 + R_2 + \cdots + R_n
-\]
+$$
 
 - En **circuitos en paralelo**, la resistencia equivalente se calcula como:
 
-\[
+$$
 \frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}
-\]
+$$
 
 ### Capacitancia e Inductancia Equivalentes
 - **Capacitancia en paralelo**: La capacitancia equivalente es la suma de las capacitancias:
 
-\[
+$$
 C_{\text{eq}} = C_1 + C_2 + \cdots + C_n
-\]
+$$
 
 - **Capacitancia en serie**: La capacitancia equivalente se calcula como:
 
-\[
+$$
 \frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}
-\]
+$$
 
 - **Inductancia en paralelo**: La inductancia equivalente es:
 
-\[
+$$
 \frac{1}{L_{\text{eq}}} = \frac{1}{L_1} + \frac{1}{L_2} + \cdots + \frac{1}{L_n}
-\]
+$$
 
 - **Inductancia en serie**: La inductancia equivalente es la suma de las inductancias:
 
-\[
+$$
 L_{\text{eq}} = L_1 + L_2 + \cdots + L_n
-\]
+$$
 
 ## Procedimiento
 
