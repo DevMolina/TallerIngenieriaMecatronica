@@ -31,6 +31,8 @@
    - **Caso 5**: 100kHz, 1Vpp
 4. Observar la señal en el osciloscopio y verificar los valores ajustados.
 
+![Diagrama de circuito](mon1.png)
+
 #### 3.2 Montaje del Circuito Astable con 555
 1. Conectar el circuito astable con 555 en el protoboard según el siguiente esquema:
 ![Diagrama de circuito](diag1.png)
