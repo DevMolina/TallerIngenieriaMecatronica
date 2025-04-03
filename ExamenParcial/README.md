@@ -1,10 +1,10 @@
 # Examen Parcial
 
 ## 1. Si un LED tiene una resistencia serie de 220 Ω y se conecta a una fuente de 9V, asumiendo una caída de voltaje de 2V en el LED, ¿cuál es la corriente que circula por el circuito?  
-- [ ] a) 20 mA  
+- [ ] a) 40.9 mA  
 - [ ] b) 25 mA  
 - [ ] c) 31.8 mA  
-- [ ] d) 10 mA  
+- [ ] d) 20 mA  
 
 <!-- **Cálculo:**  
 c) \( I = \frac{V}{R} = \frac{9V - 2V}{220Ω} = \frac{7V}{220Ω} = 31.8mA \)  
@@ -25,7 +25,7 @@ b) \( V = IR \), si \( R \) es constante y \( V \) se duplica, entonces \( I \) 
 ## 3. El brillo de un LED aumenta cuando:  
 - [ ] a) Se aumenta la resistencia en serie  
 - [ ] b) Se disminuye el voltaje aplicado  
-- [ ] c) Se aumenta la corriente que pasa por él  
+- [ ] c) Se disminuye la resistencia en serie  
 - [ ] d) Se invierte la polaridad del LED  
 
 <!-- **Explicación:**  
@@ -44,7 +44,7 @@ b) El nicrom es un material con coeficiente de temperatura positivo, lo que sign
 
 ## 5. En un circuito en paralelo con tres resistencias de 10Ω, 20Ω y 30Ω, ¿cuál es la resistencia equivalente?  
 - [ ] a) 60Ω  
-- [ ] b) 20Ω  
+- [ ] b) 4.54Ω  
 - [ ] c) 5.45Ω  
 - [ ] d) 10Ω  
 
@@ -87,8 +87,8 @@ b) En un circuito astable con 555, la frecuencia de oscilación depende de R1, R
 d) Factores como ruido eléctrico, diferencias de impedancia y errores de calibración pueden afectar la medición de señales en un osciloscopio. -->
 
 ## 9. ¿Por qué es importante usar un diodo flyback cuando se activa un relé?  
-- [ ] a) Para aumentar la corriente que circula por la bobina del relé.  
-- [ ] b) Para reducir la resistencia interna del relé.  
+- [ ] a) Para aumentar la corriente que circula por la bobina del relé y garantizar su activación.  
+- [ ] b) Para reducir la resistencia interna del relé y reducir el consumo.  
 - [ ] c) Para proteger el transistor de picos de voltaje inducidos al desactivar el relé.  
 - [ ] d) Para mejorar la velocidad de conmutación del relé.  
 
@@ -110,7 +110,7 @@ c) El resistor de base en un BJT o de gate en un MOSFET controla la corriente de
 - [ ] a) 0.1 kΩ  
 - [ ] b) 10 kΩ  
 - [ ] c) 1 kΩ  
-- [ ] d) 100 Ω  
+- [ ] d) 1 MΩ  
 
 <!-- **Cálculo:**  
 c)
