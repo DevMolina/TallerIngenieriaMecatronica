@@ -47,7 +47,7 @@ En la figura 3 se muestra una forma de construir la función lógica AND con vá
 ![Función lógica AND con válvulas](./assets/ValAND.png)
 Figura 3. Función lógica AND con válvulas.
 
-La única forma de obtener una salida de presión de aire por la salida A es que ambas señales (Y, y Y2) estén presentes. Ante la ausencia de cualquiera de ellas, no habrá presión por A. También existen válvulas preconstruidas para la función AND.
+La única forma de obtener una salida de presión de aire por la salida A es que ambas señales (Y, y Y2) estén presentes. Ante la ausencia de cualquiera de ellas, no habrá presión por A. También existen válvulas preconstruidas para la función AND y se conocen como valvulas de simultaneidad.
 
 ### Función lógica OR con componentes neumáticos.
 
@@ -55,7 +55,45 @@ En la figura 4 se muestra una forma de construir la función lógica OR con vál
 
 
 ![Función lógica OR con válvulas](./assets/ValOR.png)
-Figura 1.4. Función lógica OR con válvulas.
+Figura 4. Función lógica OR con válvulas.
+
+Existirá presión en la salida A cuando exista presión en cualquiera de las entradas Y1, o Y2.
+
+También existen válvulas OR preconstruidas, se conocen como valvulas selectoras.
+
+## Actividad previa
+a) Investigar el funcionamiento de las válvulas AND (Simultaneidad) y OR (Selectora) y describir en un párrafo su operación 
+
+b) Empleando un programa de simulación (por ejemplo, FluidSim) realice el siguiente circuito neumático de control y compruebe las observaciones hechas en el inciso anterior, sobre el funcionamiento de las funciones lógicas AND y OR.
+
+![Circuito de prelaboratorio](./assets/preLab.png)
+
+## Preguntas de reflexión
+a) De acuerdo con el circuito del inciso anterior, ¿qué cambios habría que hacer para que el regreso del cilindro se realice en forma automática?
+
+b) ¿Qué aplicación industrial podría dársele al circuito? Agregar la figura o imagen de la máquina o proceso correspondiente.
+
+## Desarrollo experimental
+
+### Material
+El material a emplearse es de acuerdo a la figura que se muestra en el inciso a) de actividades.
+
+## Actividades
+
+a) Armar el circuito mostrado en la figura:
+
+![Circuito de Laboratorio](./assets/Lab.png) 
 
 
+1. Active los elementos de mando y observe el comportamiento de los cilindros.
 
+Pregunta: ¿Cuál es el diagrama de espacio fase que se obtiene de acuerdo al comportamien- to de los cilindros?
+
+2. Cambie el botón pulsador 1.2 por uno con enclavamiento y repita el experimento.
+Pregunta: ¿Qué cambios se observan y por qué se da esto?
+
+3. Restaure el botón pulsador 1.1 y ahora modifique la válvula de control 3/2 1.1 por una 3/2 de regreso por resorte. Active los botones pulsadores y observe el resultado.
+Pregunta: ¿Qué cambios se observan en el comportamiento de los cilindros y a qué se debe esto? Dé una explicación breve del modo de operación de las válvulas 3/2 con y sin resorte.
+
+<!-- ## Actividades complementarias
+Diseñe el circuito de control de mando neumático para la secuencia mostrada en el diagrama espacio fase de dos cilindros de simple efecto. El inicio de la secuencia se realizará de acuerdo con la siguiente operación: -->
