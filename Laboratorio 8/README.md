@@ -1,99 +1,104 @@
 # Control neumático de cilindros de simple efecto
 
 ## Objetivo
-- Construir el circuito neumático de mando para el control combinacional de cilindros de simple efecto, empleando válvulas neumáticas 3/2.
 
-- Diseñar e implementar el circuito de mando neumático para el control combinacional de cilindros de simple efecto empleando válvulas neumáticas 3/2, y válvulas lógicas OR y AND.
+- Construir un circuito neumático de mando para el control combinacional de cilindros de simple efecto, utilizando válvulas 3/2.
+- Diseñar e implementar un circuito neumático de mando para el control combinacional de cilindros de simple efecto, empleando válvulas 3/2 y válvulas lógicas tipo OR y AND.
 
 ## Marco teórico
-Los componentes neumáticos son elementos que utilizan aire comprimido como fuente para su funcionamiento. Existen elementos como cilindros y pistones que realizarán un movimiento mecánico de desplazamiento al serles aplicado aire comprimido por alguna de sus entradas.
 
-Existen, a su vez, elementos de control llamados válvulas; las válvulas todo-nada por ejemplo, son dispositivos binarios que controlan el flujo y la presión de un fluido, aire en el caso neumático. Algunas de estas válvulas permiten conectar una línea de presión al suministro del fluido, o conectar dicha línea a la atmósfera. Otras permiten invertir el sentido del flujo, invirtiendo la presión en una línea de presión.
+Los componentes neumáticos son dispositivos que utilizan aire comprimido como fuente de energía para su funcionamiento. Entre ellos se encuentran cilindros y pistones que, al recibir aire comprimido por una de sus entradas, generan un desplazamiento mecánico.
+
+Las válvulas son elementos de control que dirigen el flujo de aire comprimido en un sistema neumático. Las válvulas todo/nada, por ejemplo, actúan como interruptores binarios que permiten o bloquean el paso del aire. Algunas conectan una línea de presión al suministro de aire comprimido; otras permiten liberar esa presión hacia la atmósfera o cambiar la dirección del flujo.
 
 ### Cilindros de simple efecto
 
-En los cilindros de simple efecto, el aire comprimido es aplicado en un solo lado de la cara del pistón; el otro lado está abierto a la atmósfera. Los cilindros pueden desarrollar trabajo en una sola dirección. El regreso del movimiento del pistón es realizado por un resorte interno o por la aplicación de una fuerza externa.
+En los cilindros de simple efecto, el aire comprimido se aplica solo en un lado del pistón; el otro lado permanece abierto a la atmósfera. Estos cilindros realizan trabajo únicamente en una dirección, y su retorno se logra mediante un resorte interno o una fuerza externa.
 
-La fuerza del resorte regresa al pistón a su posición inicial con una razonable alta velocidad bajo condiciones sin carga. El golpe de regreso entonces está limitado por las características naturales del resorte.
+La fuerza del resorte regresa al pistón a su posición inicial con una velocidad razonablemente alta, siempre que no exista carga. Este retorno está limitado por las propiedades del resorte.
 
-Este tipo de cilindros requieren sólo una conexión neumática y un puerto de descarga. El puerto de descarga debe estar libre de obstrucciones para asegurar que el pistón no esté restringido por el paso del aire. Es normalmente colocado un filtro en el puerto de descarga.
-
-![Cilindro Simple Efecto](./assets/cilSimEfecto.png)
-
-Figura 1. Cilindro de simple efecto.
-
-El pistón en el cilindro de simple efecto operará entonces por el suministro de aire comprimido por su único puerto de entrada. Cuando la fuente de aire comprimido es eliminada, el pistón regresará a su posición inicial con la ayuda de un resorte interno. 
-
-La figura 1. ilustra el diagrama representativo de un cilindro de simple efecto.
-Válvula de dos posiciones tres vías normalmente cerrada. El símbolo utilizado para representar una válvula de este tipo accionada manualmente se muestra en la figura 2.
-
-![Valvula 3/2 accionada manualmente](./assets/valvulaAccMec.png)
-Figura 2. Válvula 3/2 accionada manualmente.
-
-La entrada P se conecta a la presión de suministro, la salida A se conecta a la línea de presión que se desea controlar y la toma R es la descarga a la atmósfera. Esta última toma no está disponible para conectarla a ninguna línea.
-
-El funcionamiento de la válvula es de la siguiente forma:
-
-- Cuando la válvula se encuentra en su posición normal, es decir, cuando no se ha accionado, la entrada P está bloqueada y la salida A está conectada a la atmósfera. Ésta es la posición mostrada en el diagrama.
-
-- Cuando se acciona la válvula, la entrada P se conecta a la salida A y el orificio de descarga queda bloqueado.
-
-En el símbolo de la válvula se muestran ambas condiciones. En el cuadro inferior se mues- tra la condición normal (no accionada).
-
-### Función lógica "AND" con componentes neumáticos.
-
-En la figura 3 se muestra una forma de construir la función lógica AND con válvulas neumáticas. Utilizando dos válvulas 3/2 normalmente cerradas de accionamiento neumático. En este caso la salida A es igual a Y, AND Y2, esta salida A es proporcionada directamente por la presión de suministro.
-
-![Función lógica AND con válvulas](./assets/ValAND.png)
-Figura 3. Función lógica AND con válvulas.
-
-La única forma de obtener una salida de presión de aire por la salida A es que ambas señales (Y, y Y2) estén presentes. Ante la ausencia de cualquiera de ellas, no habrá presión por A. También existen válvulas preconstruidas para la función AND y se conocen como valvulas de simultaneidad.
-
-### Función lógica OR con componentes neumáticos.
-
-En la figura 4 se muestra una forma de construir la función lógica OR con válvulas de dos posiciones, tres vías normalmente cerradas, de accionamiento neumático. 
+Estos cilindros requieren una sola conexión neumática y un puerto de descarga, el cual debe permanecer libre de obstrucciones para garantizar un correcto retorno del pistón. Es común colocar un filtro en el puerto de descarga.
 
 
-![Función lógica OR con válvulas](./assets/ValOR.png)
-Figura 4. Función lógica OR con válvulas.
 
-Existirá presión en la salida A cuando exista presión en cualquiera de las entradas Y1, o Y2.
+El pistón opera mediante el suministro de aire comprimido a su único puerto de entrada. Al eliminar esta fuente, el resorte interno lo devuelve a su posición original. La **Figura 1** muestra el diagrama representativo de un cilindro de simple efecto. 
 
-También existen válvulas OR preconstruidas, se conocen como valvulas selectoras.
+![Cilindro Simple Efecto](./assets/cilSimEfecto.png)  
+
+**Figura 1.** Cilindro de simple efecto.
+
+Una válvula de 3 vías y de 2 posiciones **3/2**, normalmente cerrada y accionada manualmente, se representa como en la **Figura 2**:
+
+![Válvula 3/2 accionada manualmente](./assets/valvulaAccMec.png)  
+
+**Figura 2.** Válvula 3/2 accionada manualmente.
+
+- **1**: entrada de aire comprimido.  
+- **2**: salida hacia el sistema.  
+- **3**: escape hacia la atmósfera.
+
+**Funcionamiento:**
+
+- En su estado normal (no accionada), la entrada **1** está bloqueada y la salida **2** se conecta al escape **3**.
+- Al accionar la válvula, **1** se conecta con **2**, y el escape queda bloqueado.
+
+El símbolo muestra ambas condiciones: la posición izquierda representa el estado accionado, y el derecho, el estado normal.
+
+### Función lógica "AND" con componentes neumáticos
+
+La **Figura 3** muestra cómo implementar la función lógica **AND** usando válvulas 3/2 normalmente cerradas de accionamiento neumático.
+
+![Función lógica AND con válvulas](./assets/ValAND.png)  
+**Figura 3.** Función lógica AND con válvulas.
+
+La salida de aire a través de **A** se obtiene solo si ambas entradas de señal (**Y** y **Y2**) están presentes. Si alguna falta, no habrá salida. También existen válvulas comerciales que realizan esta función y se conocen como **válvulas de simultaneidad**.
+
+### Función lógica "OR" con componentes neumáticos
+
+La **Figura 4** muestra cómo implementar la función lógica **OR** con válvulas 3/2 normalmente cerradas.
+
+![Función lógica OR con válvulas](./assets/ValOR.png)  
+**Figura 4.** Función lógica OR con válvulas.
+
+En este caso, existirá presión en la salida **A** si hay presión en **Y1** o en **Y2**. También existen versiones comerciales llamadas **válvulas selectoras**.
 
 ## Actividad previa
-a) Investigar el funcionamiento de las válvulas AND (Simultaneidad) y OR (Selectora) y describir en un párrafo su operación 
 
-b) Empleando un programa de simulación (por ejemplo, FluidSim) realice el siguiente circuito neumático de control y compruebe las observaciones hechas en el inciso anterior, sobre el funcionamiento de las funciones lógicas AND y OR.
+a) Investigar el funcionamiento de las válvulas lógicas **AND (simultaneidad)** y **OR (selectora)**. Redactar un párrafo que describa su operación.
+
+b) Usando un simulador como **FluidSim**, construir el siguiente circuito neumático y comprobar las observaciones anteriores sobre las funciones lógicas **AND** y **OR**.
 
 ![Circuito de prelaboratorio](./assets/preLab.png)
 
 ## Preguntas de reflexión
-a) De acuerdo con el circuito del inciso anterior, ¿qué cambios habría que hacer para que el regreso del cilindro se realice en forma automática?
 
-b) ¿Qué aplicación industrial podría dársele al circuito? Agregar la figura o imagen de la máquina o proceso correspondiente.
+a) Con base en el circuito anterior, ¿qué modificaciones serían necesarias para que el cilindro regrese de forma automática?
+
+b) ¿Qué aplicación industrial podría tener este circuito? Agregar una imagen o figura del proceso o máquina correspondiente.
 
 ## Desarrollo experimental
 
-### Material
-El material a emplearse es de acuerdo a la figura que se muestra en el inciso a) de actividades.
+### Materiales
+
+Los materiales a utilizar corresponden a los mostrados en la figura del inciso a) de las actividades.
 
 ## Actividades
 
-a) Armar el circuito mostrado en la figura:
+a) Montar el circuito mostrado en la siguiente figura:
 
-![Circuito de Laboratorio](./assets/Lab.png) 
+![Circuito de Laboratorio](./assets/Lab.png)
 
+1. Activar los elementos de mando y observar el comportamiento de los cilindros.  
+   **Pregunta:** ¿Cuál es el diagrama espacio-fase que representa el comportamiento observado?
 
-1. Active los elementos de mando y observe el comportamiento de los cilindros.
+2. Sustituir el pulsador 1.2 por uno con enclavamiento y repetir el experimento.  
+   **Pregunta:** ¿Qué cambios se observan y cuál es la causa de dichos cambios?
 
-Pregunta: ¿Cuál es el diagrama de espacio fase que se obtiene de acuerdo al comportamien- to de los cilindros?
+3. Restaurar el pulsador 1.1 y cambiar la válvula 3/2 1.1 por una de regreso por resorte. Activar los pulsadores y observar.  
+   **Pregunta:** ¿Qué variaciones se presentan en el comportamiento de los cilindros? Explicar brevemente el funcionamiento de una válvula 3/2 con y sin resorte.
 
-2. Cambie el botón pulsador 1.2 por uno con enclavamiento y repita el experimento.
-Pregunta: ¿Qué cambios se observan y por qué se da esto?
+<!--
+## Actividades complementarias
 
-3. Restaure el botón pulsador 1.1 y ahora modifique la válvula de control 3/2 1.1 por una 3/2 de regreso por resorte. Active los botones pulsadores y observe el resultado.
-Pregunta: ¿Qué cambios se observan en el comportamiento de los cilindros y a qué se debe esto? Dé una explicación breve del modo de operación de las válvulas 3/2 con y sin resorte.
-
-<!-- ## Actividades complementarias
-Diseñe el circuito de control de mando neumático para la secuencia mostrada en el diagrama espacio fase de dos cilindros de simple efecto. El inicio de la secuencia se realizará de acuerdo con la siguiente operación: -->
+Diseñar un circuito de control neumático de mando para ejecutar una secuencia basada en el diagrama espacio-fase de dos cilindros de simple efecto. La secuencia iniciará según la siguiente operación:
+-->
