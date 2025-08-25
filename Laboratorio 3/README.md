@@ -1,11 +1,7 @@
 # Guía de Laboratorio 3: Uso del Generador de Señales, Osciloscopio y Montaje de un Circuito Astable con 555
 
 ### 1. Lista de Materiales
-- Generador de señales
-- Osciloscopio
-- Multímetro
 - *Protoboard
-- Fuente de alimentación de 5V o 9V
 - *Resistencias: 1kΩ, 4.7kΩ, 10kΩ, 47kΩ, 100kΩ
 - *Condensador: 10nF, 100nF
 - *Condesador electrolitico: 47uF
