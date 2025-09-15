@@ -41,28 +41,22 @@ Los circuitos combinacionales se diseñan a partir de estas compuertas y depende
 3. Registre los valores de entrada y salida.
 
 **2. Problema Aplicado: Sistema de Encendido en un Vehículo**
-1. Diseñe un circuito de encendido de motor que funcione bajo las siguientes condiciones:
-   - Entrada A: Llave de encendido girada.
-   - Entrada B: Sensor de embrague o freno presionado.
-   - Entrada C: Batería con carga suficiente.
-   - Salida F: Motor arranca si A y B están activos y la batería (C) tiene carga.
+1. Diseñe un circuito lógico para un automóvil moderno, el sistema de encendido del motor (S) depende de cuatro condiciones:
+
+- A = Llave de encendido girada (1 = sí, 0 = no).
+- B = Botón de encendido presionado (1 = sí, 0 = no).
+- C = Sensor de seguridad (1 = detecta falla, 0 = todo correcto).
+- D = Estado de la puerta (1 = puerta abierta, 0 = cerrada).
+
+El motor debe encenderse (S = 1) cuando se cumpla lo siguiente:
+
+- El motor puede arrancar si el conductor gira la llave (A) O presiona el botón (B).
+- No debe haber fallas de seguridad → es decir, $\overline{C}$
+- La puerta debe estar cerrada → es decir, $\overline{D}$
+
 2. Obtenga la expresión booleana correspondiente y represéntela con compuertas lógicas.
 3. Dibuje el diagrama de conexiones o realice la simulacion usando TinkerCAD.
 4. Dibuje el circuto equivalente en lógica de contactos.
-3. Implemente el circuito en el protoboard.
-
-
-### **6. Problema Aplicado: Control de nivel de tanques de almacenamiento de agua**
-1. Diseñe un sistema de control de una bomba para el llenado de un tanque con las siguientes condiciones:
-   - Se dispone de dos tanques de agua, el primero es un tanque subterraneo (Tanque A) de 5000L con disponibilidad de una bomba para conducirla a un tanque elevado (Tanque B) de 1000L, cada tanque cuenta con un sensor tipo flotador que permite obtener una el estado del nivel
-   - Detector de nivel Tanque A. Nivel de agua bajo = 0.
-   - Detector de nivel Tanque B. Nivel de agua bajo = 0.
-   - Entrada C: Botón de encendido de la bomba modo manual.
-   - Salida bomba: Mediante un led simule la activación o inactivación del motor de la bomba. La bomba se debe activar cuando el Tanque A se encuentre con nivel bajo de agua y en el Tanque A nivel alto. Con la Entrada C el usuario puede activar la bomba manualmente siempre y cuando el Tanque A tenga nivel de agua alto.
-   - Salida indicador emergencia. Se debe activar un indicador (Led) que indique al usuario cuando los dos tanques tengan nivel de agua bajo.
-2. Obtenga la expresión booleana y represéntela con compuertas lógicas.
-3. Obtenga el diagrama de conexiones empleando TinkerCAD.
-4. Dibuje el diagrama de contactos equivalente.
 3. Implemente el circuito en el protoboard.
 
 ##### NOTA: puede hacer uso del [Simplificador mapa K Online](http://www.32x8.com/index.html)
